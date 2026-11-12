@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#101820">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MY CALCULATOR"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="35dp"/>
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter first number"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter second number"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:padding="12dp"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:text="+"/>
+
+        <Button
+            android:id="@+id/subtractButton"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:text="-"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/multiplyButton"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:text="×"/>
+
+        <Button
+            android:id="@+id/divideButton"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:text="÷"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="CLEAR"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result: 0"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#00E5FF"
+        android:gravity="center"
+        android:layout_marginTop="35dp"/>
+
+</LinearLayout>
